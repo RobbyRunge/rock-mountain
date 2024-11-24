@@ -1,0 +1,239 @@
+body {
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  color: white;
+}
+.aot {
+  background-image: url("img-mountain/header.png");
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+header img {
+  width: 100px;
+}
+.navLink {
+  color: white;
+  text-decoration: none;
+  margin-left: 16px;
+}
+.mt-16 {
+  /* erster button eigene eigenschaft mit margin-top */
+  margin-top: 16px;
+}
+.navLink:hover {
+  color: #b48a4e;
+}
+.navImage {
+  height: 24px;
+  width: auto;
+  margin-left: 16px;
+}
+.navImage:hover {
+  filter: drop-shadow(0px 0px 4px #ffffff);
+  cursor: pointer;
+}
+h1 {
+  font-size: 84px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: "Viga";
+  font-weight: 100;
+  text-align: center;
+}
+.button {
+  background-color: #b48a4e;
+  color: white;
+  text-decoration: none;
+  padding: 16px;
+}
+
+.section-quickLinks {
+  background-color: black;
+  padding: 80px 80px;
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.quickLink {
+  display: flex;
+  flex-direction: column;
+  color: #b48a4e;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  gap: 8px;
+  /* width: 30%;  */
+  flex: 1; /*  to be discusses with designer */
+}
+.quickLink img {
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Seitenverhältniss, brauchst keine Höhe mehr, wird 1 zu 1 angezeigt  */
+  object-fit: cover;
+}
+
+.section-buy-ticket {
+  background-color: #272727;
+  display: flex;
+  align-items: center;
+}
+.buy-image-ticket-left {
+  height: 280px;
+}
+.festival-info {
+  padding: 40px;
+  height: 200px;
+  flex: 1;
+  /* ^^ "flex" bedeutet, nimm dir den Platz den du nehmen kannnst aber nicht mehr ^^ */
+  text-align: center;
+}
+.festival-info h2 {
+  margin-block-start: 0;
+}
+.seperator {
+  /* Balken */
+  background-color: white;
+  width: 1px;
+  height: 200px;
+  margin-right: 10px;
+}
+.buy-ticket-container {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.section-slogan {
+  background-color: white;
+  text-align: center;
+  color: #b48a4e;
+  font-weight: 700;
+  font-size: 24px;
+  padding: 80px 80px;
+}
+
+.section-video {
+  background-image: url(img-mountain/bottom.png);
+  height: 600px;
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  display: flex;
+  background-color: black;
+  padding: 80px 80px;
+}
+.half-width {
+  width: 50%;
+}
+.footer-social-media-icon {
+  width: 32px;
+}
+.footer-left {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: flex-end;
+  padding-right: 16px;
+}
+.footer-center {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 16px;
+}
+input {
+  height: 41px;
+  flex: 1;
+}
+input::placeholder {
+  color: rgba(0, 0, 0, 0.4);
+  padding-left: 16px;
+}
+.footer-button {
+  width: 200px;
+  border-width: 0;
+}
+.footer-form {
+  display: flex;
+}
+
+@media (max-width: 700px) {
+  .hide-mobile {
+    display: none;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .full-width-mobile {
+    width: 100%;
+  }
+
+  .footer-left {
+    text-align: center;
+    margin-bottom: 32px;
+    padding: 0;
+  }
+}
+
+@media (max-width: 950px) {
+  .section-buy-ticket {
+    flex-direction: column;
+  }
+
+  .buy-image-ticket-left {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .seperator {
+    display: none;
+    /* width: 200px;
+    height: 1px;
+    margin-right: 0px;
+    margin-bottom: 16px; */
+  }
+
+  .buy-ticket-container {
+    padding-bottom: 40px;
+  }
+
+  .buy-ticket-container a {
+    width: 100%;
+    text-align: center;
+  }
+
+  p {
+    margin-block-end: 0;
+    margin-block-start: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .section-quickLinks {
+    flex-direction: column;
+    gap: 100px;
+  }
+}
